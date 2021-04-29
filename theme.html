@@ -18,11 +18,11 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #1abc9c; /* Green */
+    background-color: #212121; /* Green */
     color: #ffffff;
   }
   .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #BF360C; /* Dark Blue */
     color: #ffffff;
   }
   .bg-3 { 
@@ -30,12 +30,17 @@
     color: #555555;
   }
   .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #212121; /* Black Gray */
     color: #fff;
   }
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .container-fluid-broder {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
   }
   .navbar {
     padding-top: 15px;
@@ -52,6 +57,8 @@
   </style>
 </head>
 <body>
+<div class="container-fluid-broder bg-2 text-center">
+</div>
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -63,26 +70,31 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">DOWNLOAD</a></li>
+        <li><a href="#whoami">WHO</a></li>
+        <li><a href="#download">DOWNLOAD</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="container-fluid bg-1 text-center">
+ <section  id="whoami">
+<div class="container-fluid bg-1 text-center" >
   <h3 class="margin">Who Am I?</h3>
-  <img src="logo.png" class="img-responsive img-circle margin" style="display:inline" alt="logo" width="350" height="350">
+  <img src="logo.png" class="img-responsive img-circle margin" style="display:inline" alt="logo" width="350" height="100">
   <h3>Zip Gernator</h3>
 </div>
-
+ </section>
+<div class="container-fluid-broder bg-3 text-center">
+</div>
+ <section id="download">
 <div class="container-fluid bg-2 text-center">
   <p>Download your File</p>
   <a href="vishaltrial.doc" download> 
       <button type="button" class="btn btn-indigo btn-lg">Download</button>
        </a> 
 </div>
-
+ </section>
+<div class="container-fluid-broder bg-3 text-center">
+</div>
 <footer class="container-fluid bg-4 text-center">
   <p>Made By POC's log export team</p> 
 </footer>
